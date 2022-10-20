@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "module": "es/index.js",
   "scripts": {
-    "build": "vite build"
+    "build": "vite build & esno build/buildLess"
   },
   "files": ["es", "lib"],
   "keywords": ["zsw-ui","ui"],

@@ -11,7 +11,7 @@ export default defineConfig({
     minify: false,      // 是否压缩
     cssCodeSplit: true,  // css分离
     rollupOptions: {
-      external: [ 'vue' ],    // 忽略打包vue文件
+      external: [ 'vue', /\.less/ ],    // 忽略打包vue文件
       input: ['index.ts'], // 入口文件
       output: [
         // 打包成cjs（CommonJS）和esm（ESModule）两种形式
@@ -48,6 +48,23 @@ export default defineConfig({
       // 因为这个插件默认打包到es下，想让lib目录下也生成声明文件需要再配置一个
       outputDir: 'lib',
       tsConfigFilePath: '../../tsconfig.json'
-    })
+    }),
+    {
+      name: 'style',
+      generateBundle(config, bundle){
+        // 这里可以获取打包后的文件目录以及代码code
+        const keys = Object.keys(bundle)
+
+        for(const key of keys) {
+          const bundler:any = bundle[key as any]
+          // rollup内置方法，将所有输出文件code中的.less换成.css
+          this.emitFile({
+            type:'asset',
+            fileName:key,//文件名不变
+            source: bundler.code.replace(/\.less/g, '.css')
+          })
+        }
+      }
+    }
   ]
 })
