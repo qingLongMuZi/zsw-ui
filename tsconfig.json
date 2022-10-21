@@ -8,6 +8,9 @@
     "skipLibCheck": true,
     "esModuleInterop": true,
     "moduleResolution": "Node",
-    "lib": ["ESNext", "DOM", "DOM.Iterable"]
-  }
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "types": ["unplugin-vue-define-options"]
+  },
+  "include": ["packages/*", "examples"],
+  "exclude": ["node_module"]
 }
