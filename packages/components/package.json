@@ -2,12 +2,10 @@
   "name": "zsw-ui",
   "version": "1.0.0",
   "description": "",
-  "main": "lib/index.js",
-  "module": "es/index.js",
+  "main": "index.ts",
   "scripts": {
     "build": "vite build & esno build/buildLess"
   },
-  "files": ["es", "lib"],
   "keywords": ["zsw-ui","ui"],
   "author": "yoyoyo-zsw",
   "license": "MIT",

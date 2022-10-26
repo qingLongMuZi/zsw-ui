@@ -1,10 +1,7 @@
 "use strict";
-const button = require("./button.js");
-const withInstall = (comp) => {
-  comp.install = (app) => {
-    app.component(comp.name, comp);
-  };
-  return comp;
-};
-const ZuiBtn = withInstall(button);
-module.exports = ZuiBtn;
+Object.defineProperties(exports, { __esModule: { value: true }, [Symbol.toStringTag]: { value: "Module" } });
+const button_vue_vue_type_script_setup_true_lang = require("./button.vue_vue_type_script_setup_true_lang.js");
+const install = require("../utils/vue/install.js");
+const ZuiBtn = install.withInstall(button_vue_vue_type_script_setup_true_lang);
+exports.ZuiBtn = ZuiBtn;
+exports.default = ZuiBtn;

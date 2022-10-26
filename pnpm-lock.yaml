@@ -16,6 +16,7 @@ importers:
       vite-plugin-dts: ^1.6.6
       vue: ^3.2.36
       vue-router: ^4.1.5
+      vuex: ^4.1.0
     devDependencies:
       '@types/less': 3.0.3
       '@vitejs/plugin-vue': 3.1.2_vite@3.1.8+vue@3.2.36
@@ -29,6 +30,7 @@ importers:
       vite-plugin-dts: 1.6.6_vite@3.1.8
       vue: 3.2.36
       vue-router: 4.1.5_vue@3.2.36
+      vuex: 4.1.0_vue@3.2.36
 
   examples:
     specifiers:
@@ -1913,6 +1915,15 @@ packages:
       '@vue/runtime-dom': 3.2.36
       '@vue/server-renderer': 3.2.36_vue@3.2.36
       '@vue/shared': 3.2.36
+    dev: true
+
+  /vuex/4.1.0_vue@3.2.36:
+    resolution: {integrity: sha512-hmV6UerDrPcgbSy9ORAtNXDr9M4wlNP4pEFKye4ujJF8oqgFFuxDCdOLS3eNoRTtq5O3hoBDh9Doj1bQMYHRbQ==}
+    peerDependencies:
+      vue: ^3.2.0
+    dependencies:
+      '@vue/devtools-api': 6.4.5
+      vue: 3.2.36
     dev: true
 
   /webpack-sources/3.2.3:

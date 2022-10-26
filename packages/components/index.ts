@@ -1,5 +1,9 @@
-import ZuiBtn from "./src/button";
+import ZuiBtn from "./src/button"
+import ZuiIcon from "./src/icon"
+import ZuiRow from "./src/row"
 
 export {
-  ZuiBtn
+  ZuiBtn,
+  ZuiIcon,
+  ZuiRow
 }

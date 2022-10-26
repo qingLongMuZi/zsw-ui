@@ -1,0 +1,43 @@
+.z-btn{
+  display: block;
+  background-color: #fff;
+  border: 1px solid #dcdfe6;
+  color: #606266;
+  white-space: nowrap;
+  cursor: pointer;
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 4px;
+  width: 100%;
+  padding: 10px 0;
+  &.is-round{
+    border-radius: 50px;
+  }
+  &.is-circle{
+    border-radius: 50%;
+    height: 100%;
+  }
+  &.z-btn--primary{
+    background-color: #1abc9c;
+    color: #fff;
+  }
+  &.z-btn--success{
+    background-color: 	#2ecc71;
+    color: #fff;
+  }
+  &.z-btn--warning{
+    background-color: #cda70d;
+    color: #fff;
+  }
+  &.z-btn--danger{
+    background-color: 	#e74c3c;
+    color: #fff;
+  }
+  &[disabled]{
+    background-color: #bdc3c7;
+    color: #fff;
+  }
+}

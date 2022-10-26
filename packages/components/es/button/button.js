@@ -1,10 +1,5 @@
-import { openBlock, createElementBlock } from "vue";
-import _export_sfc from "../_virtual/_plugin-vue_export-helper.js";
-const _sfc_main = {};
-function _sfc_render(_ctx, _cache) {
-  return openBlock(), createElementBlock("button", null, "z-ui\u6D4B\u8BD5\u6309\u94AE");
-}
-const Btn = /* @__PURE__ */ _export_sfc(_sfc_main, [["render", _sfc_render]]);
+import _sfc_main from "./button.vue_vue_type_script_setup_true_lang.js";
+import { default as default2 } from "./button.vue_vue_type_script_setup_true_lang.js";
 export {
-  Btn as default
+  default2 as default
 };
