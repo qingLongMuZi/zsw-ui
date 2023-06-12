@@ -40,4 +40,7 @@
       padding: 5px 0;
     }
   }
+  .z-row{
+    margin-bottom: 20px;
+  }
 </style>

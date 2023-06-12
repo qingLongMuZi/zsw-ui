@@ -154,9 +154,3 @@
     console.log(evt)
   }
 </script>
-
-<style lang="less" scoped>
-  .z-row{
-    margin-bottom: 20px;
-  }
-</style>

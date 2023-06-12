@@ -1,17 +1,11 @@
 <template>
-  <i
-    :class="styleClass"
-    :style="style"
-  >
-    <slot/>
-  </i>
+  <i :style="[style]" :class="[icon]"></i>
 </template>
 
 <script lang="ts" setup>
+  import "./style/index.less"
   import { computed } from "vue"
   import { iconProps } from "./type"
-  import type { CSSProperties } from "vue"
-  import { isUndefined } from "@zsw-ui/utils"
   
   defineOptions({
     name: 'ZswIcon',
@@ -20,19 +14,10 @@
 
   const props = defineProps(iconProps)
 
-  const styleClass = computed(()=>{
+  const style = computed(()=>{
     return {
-
+      'fontSize': `${props.size}px`,
+      'color': `${props.colors![0]}`
     }
   })
-
-  const style = computed<CSSProperties>(() => {
-    if(!props.size && !props.color) return {}
-
-    return {
-      fontSize: isUndefined(props.size)?undefined:props.size,
-      color: props.color
-    }
-  })
-
 </script>
